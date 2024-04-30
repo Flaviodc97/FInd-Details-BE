@@ -18,13 +18,11 @@ namespace Data_Breaks.Controllers
     public class RecordController : Controller
     {
         private const string directoryPath = "indexFolder";
-        private readonly ILogger<RecordController> _logger;
         private readonly List<Record> records;
         private readonly IRecordSearcherEngine _recordSearcherEngine;
 
-        public RecordController(ILogger<RecordController> logger, IRecordSearcherEngine recordSearcherEngine)
+        public RecordController(IRecordSearcherEngine recordSearcherEngine)
         {
-            _logger = logger;
             _recordSearcherEngine = recordSearcherEngine;
         }
 
@@ -34,6 +32,7 @@ namespace Data_Breaks.Controllers
         {
             try 
             {
+                
                 List<Record> data = new List<Record>();
                 if (Directory.Exists(directoryPath))
                 {
