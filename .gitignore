@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Data-Breaks/indexFolder
+/Data-Breaks/0.txt
+/Data-Breaks/1.txt
+/Data-Breaks/2.txt
+/Data-Breaks/4.txt
